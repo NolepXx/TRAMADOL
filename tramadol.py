@@ -314,16 +314,16 @@ def clear():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""[bold green]
-[bold cyan] _________  ___   __  ______   ___  ____  __ 
-[bold cyan]/_  __/ _ \/ _ | /  |/  / _ | / _ \/ __ \/ / [bold red]•[bold cyan]𝔼𝕏𝕋ℝ𝔸
-[bold cyan] / / / , _/ __ |/ /|_/ / __ |/ // / /_/ / /__
-[bold cyan]/_/ /_/|_/_/ |_/_/  /_/_/ |_/____/\____/____/
+[bold red] _________  ___   __  ______   ___  ____  __ 
+[bold red]/_  __/ _ \/ _ | /  |/  / _ | / _ \/ __ \/ / [bold red]•[bold cyan]𝔼𝕏𝕋ℝ𝔸
+[bold white] / / / , _/ __ |/ /|_/ / __ |/ // / /_/ / /__
+[bold white]/_/ /_/|_/_/ |_/_/  /_/_/ |_/____/\____/____/
 
        [pbold red] ____  _      ____  ____ ___  _ _     _  _      _____  
        [bold red]/  _ \/ \__/|/  _ \/   _\\  \/// \   / \/ \  /|/  __/  
        [bold red]| / \|| |\/||| / \||  /   \  / | |   | || |\ |||  \    
        [bold white]| |-||| |  ||| \_/||  \__ / /  | |_/\| || | \|||  /_   
-       [bold white]\_/ \|\_/  \|\____/\____//_/   \____/\_/\_/  \|\____\  [bold cyan]THEME•BY NOLEPXXXX 
+       [bold white]\_/ \|\_/  \|\____/\____//_/   \____/\_/\_/  \|\____\  [bold cyan]THEME[bold red]•BY NOLEPXXXX 
                                                        
              """,width=100,padding=(0,3),title=f"NOLEPXX X",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
