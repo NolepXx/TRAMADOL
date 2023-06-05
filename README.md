@@ -1,4 +1,4 @@
-# Brayennn3.4
+TRAMADOL
 
 pkg update && pkg upgrade
 
@@ -18,10 +18,10 @@ pip install rich
 
 pip install mechanize
 
-git clone https://github.com/BrayennnXD/Brayennn3.4
+git clone https://github.com/NolepXx/TRAMADOL
 
-cd Brayennn3.4
+cd TRAMADOL
 
 git pull
 
-python BrayennnFB.py
+python tramadol.py
