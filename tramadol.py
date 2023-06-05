@@ -56,6 +56,7 @@ gabriel=[]
 uidl =[]
 opsi=[]
 uidf=[]
+uaa=[]
 liu=[]
 console = Console()
 ses=requests.Session()
@@ -889,7 +890,7 @@ for memekx in range(200):
 	ua2 = 'Dalvik/'+str(dalvik)+' (Linux; U; Android '+str(android)+'; '+str(merks)+' Build/'+str(build2)+') [FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBDV/merek;FBSV/'+str(android)+';FBDM/{density='+str(denincity)+',width='+str(width)+',height='+str(heigt)+'};FBCR/'+str(fbcr)+';FBLC/id_ID;FB_FW/1;]'
 	ua3 = 'Dalvik/2.1.0 (Linux; U; Android '+str(android)+'; Redmi 5A Build/'+str(build2)+') [FBAN/MessengerLite;FBAV/'+str(fbav)+';FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/'+str(fbbv)+';FBCR/Tsel-PakaiMasker;FBMF/Xiaomi;FBBD/Xiaomi;FBDV/Redmi 5A;FBSV/'+str(android)+';FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/'+'{density='+str(denincity)+',width='+str(width)+',height='+str(heigt)+'};FBCR/'+str(fbcr)+';FBLC/id_ID;FB_FW/1;]'
 	api = str(rc([ua1,ua2,ua3]))
-	liu.append(api)
+	uaa.append(api)
 	
 for x in range(10):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -1876,7 +1877,7 @@ def validate2(idf,pwv):
 def reguler1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -1963,7 +1964,7 @@ def reguler1(idf,pwv):
 def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(liu)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -2047,7 +2048,7 @@ def reguler2(idf,pwv):
 def kontol(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -2136,7 +2137,7 @@ def kontol(idf,pwv):
 def bapi(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]M-Alpha[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -2225,7 +2226,7 @@ def bapi(idf,pwv):
 def colmek1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]X[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
@@ -2295,7 +2296,7 @@ def colmek1(idf,pwv):
 def colmek2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
+	ua = random.choice(uaa)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]D[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
