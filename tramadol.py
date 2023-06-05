@@ -325,10 +325,10 @@ for agenkuw in range(10000):
 	
 	aa='Mozilla/5.0 (Linux; Android 13;'
 	b=random.choice(['4.3','5.0','7.0','8.1.0','9','10','11','12','13'])
-	c=Lenovo TB-X606X Build/QP1A.190711.020; wv) '
+	c='Lenovo TB-X606X Build/QP1A.190711.020;wv)'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	f=random.choice(['A','B','C','D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.65'
 	h=random.randrange(73,100)
 	i='0'
@@ -338,10 +338,10 @@ for agenkuw in range(10000):
 	uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
 	uaa.append(uaku2)
 	
-	aa='Mozilla/5.0 (Linux; Android 10; '
+	aa='Mozilla/5.0 (Linux; Android 10;'
 	b=random.choice(['7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['moto e(7) plus Build/QPZS30.30-Q3-38-69-12; wv)'])
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	d=random.choice(['A','B','C','D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135'
