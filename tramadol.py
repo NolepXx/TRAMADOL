@@ -315,7 +315,7 @@ def clear():
 def banner():
 	cetak(panel(f"""[bold green]
 [bold red] _________  ___   __  ______   ___  ____  __ 
-[bold red]/_  __/ _ \/ _ | /  |/  / _ | / _ \/ __ \/ / [bold red]•[bold cyan]𝔼𝕏𝕋ℝ𝔸
+[bold red]/_  __/ _ \/ _ | /  |/  / _ | / _ \/ __ \/ / [bold red]•[bold white]𝔼𝕏𝕋ℝ𝔸
 [bold white] / / / , _/ __ |/ /|_/ / __ |/ // / /_/ / /__
 [bold white]/_/ /_/|_/_/ |_/_/  /_/_/ |_/____/\____/____/
 
