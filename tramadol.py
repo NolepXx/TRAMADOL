@@ -272,7 +272,6 @@ def login_lagi334():
 							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							os.system("xdg-open https://chat.whatsapp.com/DOiKBF0XcOmG9IsjBT4X7v")
 							print("\n [+] Login Berhasil | python tramadol.py");followdong()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
