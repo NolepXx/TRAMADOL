@@ -909,7 +909,7 @@ def banner():
        [bold white]| |-||| |  ||| \_/||  \__ / /  | |_/\| || | \|||  /_   
        [bold white]\_/ \|\_/  \|\____/\____//_/   \____/\_/\_/  \|\____\  [bold white]THEME[bold red]•[bold white]BY NOLEPXXXX 
                                                        
-             """,width=100,padding=(0,5),title=f"NOLEPXXX",style=f"bold cyan"))
+             """,width=90,padding=(0,5),title=f"NOLEPXXX",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
