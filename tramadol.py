@@ -83,7 +83,34 @@ for xd in range(10000):
 	j=random.randrange(1, 4)
 	k='Mobile Safari/537.36 XiaoMi/Mint Browser/1.3.3'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
+	uaa.append(uaku)
+for brayen in range(10000):
+    rr = random.randint
+    rc = random.choice
+    merek = random.choice(['SM-A405FN','SM-G935T','SM-A346M','SM-J415FN','SM-X706B','SM-J337R4','SM-A9000','SM-G532G'])
+    build = random.choice(['LRX22C','GWK74','R16NW','JZO54K','JSS15J','GRWK74','KOT49H','JEH80D','MMB29M','IMM76D','KTU84P','JDQ39','LMY47X','NMF26X','M1AJQ'])
+    u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; {merek} Build/{build}) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.{str(rr(0,4))} Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u2 = f"Mozilla/5.0 (iPhone; CPU iPhone OS {str(rr(4,12))}.{str(rr(1,9))}.{str(rr(1,9))}like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile/14G60 Safari/604.1"
+    UaMainn = random.choice([u1, u2])
+    uaa.append(UaMainn)
+
+for memekx in range(200):
+	android = str(random.randint(4,9))+'.'+str(random.randint(0,1))+'.'+str(random.randint(0,1))
+	fbav = str(random.randint(37,325))+".0.0."+str(random.randint(1,20))+"."+str(random.randint(40,150))
+	fbbv = str(random.randint(11111111,99999999));fbrv = str(random.randint(11111111,99999999))
+	build2 = ['LRX22C','GWK74','R16NW','FROYO','JZO54K','JSS15J','GRWK74','KOT49H','MMB29M','IMM76D','KTU84P','JDQ39','LMY47X','NMF26X','M1AJQ','GINGERBREAD']
+	merk2 = ['SM-A405FN','SM-A346M','SM-J415FN','SM-X706B','SM-J337R4','SM-A9000','SM-G532G','SM-J810M','SM-T280']
+	fbcr = str(random.choice(['TELKOMSEL','AXIS','Indosat','XL','3SinyalKuatHemat','Tsel-PakaiMasker','XL Axiata']))
+	fblc = str(random.choice(['sv_SE','en_GB','en_US','es_MX','th_TH','pl_PL','id_ID']))
+	fbpn = str(random.choice(['com.facebook.katana','com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.mlite','MessengerLite']))
+	merk_build = str(random.choice(merk2))+'<=>'+str(random.choice(build2));merks,build2 = merk_build.split('<=>')
+	large = str(random.choice(['1.0','1.5','2.0','2.5','3.0','3.5']))+'<=>'+str(random.choice(['760','750','1092','1082','650','1080']))+'<=>'+str(random.choice(['760','750','1092','1082','650','1080']));denincity,width,heigt = large.split('<=>')      
+	dalvik = str(random.choice(['2.1.0','2.0.0','1.6.0','1.5.0','1.4.0','1.2.0','1.1.0']))
+	ua1 = 'Dalvik/2.1.0 (Linux; U; Android  '+str(android)+'; SM-G935T Build/JEH80D) [FBAN/MessengerLite;FBAV/'+str(fbav)+';FBPN/com.facebook.mlite;FBLC/en_US;FBBV/'+str(fbbv)+';FBCR/Airtel;FBMF/Facebook;Facebook/lge;FBBD/SM-G935T;FBDV/SM-G935T;FBSV/'+str(android)+';FBCA/armeabi-v7a:armeabi;FBDM/'+'{density='+str(denincity)+',width='+str(width)+',height='+str(heigt)+'};FBCR/'+str(fbcr)+';FB_FW/1;]'
+	ua2 = 'Dalvik/'+str(dalvik)+' (Linux; U; Android '+str(android)+'; '+str(merks)+' Build/'+str(build2)+') [FBAN/FB4A;FBAV/'+str(fbav)+';FBPN/com.facebook.katana;FBDV/merek;FBSV/'+str(android)+';FBDM/{density='+str(denincity)+',width='+str(width)+',height='+str(heigt)+'};FBCR/'+str(fbcr)+';FBLC/id_ID;FB_FW/1;]'
+	ua3 = 'Dalvik/2.1.0 (Linux; U; Android '+str(android)+'; Redmi 5A Build/'+str(build2)+') [FBAN/MessengerLite;FBAV/'+str(fbav)+';FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/'+str(fbbv)+';FBCR/Tsel-PakaiMasker;FBMF/Xiaomi;FBBD/Xiaomi;FBDV/Redmi 5A;FBSV/'+str(android)+';FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/'+'{density='+str(denincity)+',width='+str(width)+',height='+str(heigt)+'};FBCR/'+str(fbcr)+';FBLC/id_ID;FB_FW/1;]'
+	api = str(rc([ua1,ua2,ua3]))
+	liu.append(api)
 	
 #------------[ UBAH UA DIH SINI OM ]---------------#
 for agenkuw in range(10000):
@@ -1681,7 +1708,6 @@ def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1750,7 +1776,6 @@ def validate2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V2[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1820,7 +1845,6 @@ def reguler1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1906,8 +1930,7 @@ def reguler1(idf,pwv):
 def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
+	ua = random.choice(liu)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1991,7 +2014,6 @@ def kontol(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2080,7 +2102,6 @@ def bapi(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]M-Alpha[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2169,7 +2190,6 @@ def colmek1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]X[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2239,7 +2259,6 @@ def colmek2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]D[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
