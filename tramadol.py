@@ -905,12 +905,11 @@ def banner():
 
 [bold red]___  ___ _____ ___________ _____ _      _____ _____ 
 [bold red]|  \/  ||  ___|_   _| ___ \  _  | |    |  ___|_   _|
-[bold red]| .  . || |__   | | | |_/ / | | | |    | |__   | |  [bold yellow]•[bold red] NOLEPXXXX
+[bold red]| .  . || |__   | | | |_/ / | | | |    | |__   | |  [bold yellow]•[bold red]NOLEPXXXX
 [bold white]| |\/| ||  __|  | | |    /| | | | |    |  __|  | |  
 [bold white]| |  | || |___  | | | |\ \\ \_/ / |____| |___  | |  
 [bold white]\_|  |_/\____/  \_/ \_| \_|\___/\_____/\____/  \_/  
-
-             """,width=90,padding=(0,5),title=f"NOLEPXXX",style=f"bold cyan"))
+             """,width=95,padding=(0,5),title=f"NOLEPXXX",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
