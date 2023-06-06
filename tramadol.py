@@ -847,9 +847,9 @@ def uaku():
 		for ub in ua:
 			uaa.append(ub)
 	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
+		aa=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
 		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
+		aa=re.findall('line">(.*?)<',str(aa))
 		for un in aa:
 			ua.write(un+'\n')
 		ua=open('.bbnew.txt','r').read().splitlines()
