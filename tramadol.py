@@ -1901,7 +1901,7 @@ def reguler1(idf,pwv):
 def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(liu)
+	ua = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
