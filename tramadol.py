@@ -2407,7 +2407,7 @@ def file_cp():
 	dirs = os.listdir('/sdcard/CP')
 	prints(Panel(f"""Copy Nama File Hasil Crack Di Bawah Ini Kemudian Pastekan Di Bawah Untuk Cek Opsi""",width=90,style=f"bold cyan"))
 	for file in dirs:
-		prints(Panel(f"""{(file)}""",width=90,style=f"bold cuan"))
+		prints(Panel(f"""{(file)}""",width=90,style=f"bold cyan"))
 	try:
 		prints(Panel(f"""Copy Nama File Di Atas Kemudian Tempel Di Bawah Ini Contoh : {day}.txt""",width=90,style=f"bold cyan"))
 		opsi()
@@ -2431,16 +2431,16 @@ def opsi():
 		ubah_pass.append("ubah_sandi")
 		pw2=console.input(f" [+] Masukan Password Baru : ")
 		if len(pw2) <= 5:
-			prints(Panel(f"""Sandi Minimal 6 Karakter""",width=90,style=f"bold white"))
+			prints(Panel(f"""Sandi Minimal 6 Karakter""",width=90,style=f"bold cyan"))
 		else:
 			pwbaru.append(pw2)
-	prints(Panel(f"""Total akun : {str(len(file_cp))}""",width=90,style=f"bold white"))
+	prints(Panel(f"""Total akun : {str(len(file_cp))}""",width=90,style=f"bold cyan"))
 	nomor = 0
 	for fb in file_cp:
 		akun = fb.replace("\n","")
 		ngecek  = akun.split("|")
 		nomor+=1
-		prints(Panel(f"""[{(str(nomor))}] Cek Sesi Akun = {akun}""",width=90,style=f"bold white"));jeda(0.10)
+		prints(Panel(f"""[{(str(nomor))}] Cek Sesi Akun = {akun}""",width=90,style=f"bold cyan"));jeda(0.10)
 		try:
 			mengecek(ngecek[0].replace("",""), ngecek[1])
 		except requests.exceptions.ConnectionError:
@@ -2523,7 +2523,7 @@ def mengecek(user,pw):
 		print("%s %s"%(M,oh))
 	else:
 		tree = Tree(" ",guide_style=f"bold white")
-		tree.add(Panel(f"{O}login gagal, silahkan cek kembali id dan kata sandi",width=83,padding=(0,2),style=f"bold white"))
+		tree.add(Panel(f"{O}login gagal, silahkan cek kembali id dan kata sandi",width=83,padding=(0,2),style=f"bold cyan"))
 		prints(tree)
 		  
 def scarpping_ua():
