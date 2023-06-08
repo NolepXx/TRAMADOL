@@ -2405,27 +2405,27 @@ ubahP = []
 
 def file_cp():
 	dirs = os.listdir('/sdcard/CP')
-	prints(Panel(f"""Copy Nama File Hasil Crack Di Bawah Ini Kemudian Pastekan Di Bawah Untuk Cek Opsi""",width=90,style=f"bold white"))
+	prints(Panel(f"""Copy Nama File Hasil Crack Di Bawah Ini Kemudian Pastekan Di Bawah Untuk Cek Opsi""",width=90,style=f"bold cyan"))
 	for file in dirs:
-		prints(Panel(f"""{(file)}""",width=90,style=f"bold white"))
+		prints(Panel(f"""{(file)}""",width=90,style=f"bold cuan"))
 	try:
-		prints(Panel(f"""Copy Nama File Di Atas Kemudian Tempel Di Bawah Ini Contoh : {day}.txt""",width=90,style=f"bold white"))
+		prints(Panel(f"""Copy Nama File Di Atas Kemudian Tempel Di Bawah Ini Contoh : {day}.txt""",width=90,style=f"bold cyan"))
 		opsi()
 	except IOError:
-		prints(Panel(f"""Tidak Ada File Untuk Di Cek Silahkan Crack Dulu""",width=90,style=f"bold white"))
+		prints(Panel(f"""Tidak Ada File Untuk Di Cek Silahkan Crack Dulu""",width=90,style=f"bold cyan"))
 		exit()
 
 def opsi():
 	CP = ("/sdcard/CP/")
 	romi = console.input(f" [+] Tempelkan Pilihan : ")
 	if romi == "":
-		prints(Panel(f""" [+] Isi Yang Benar""",width=90,style=f"bold white"))
+		prints(Panel(f""" [+] Isi Yang Benar""",width=90,style=f"bold cyan"))
 		opsi()
 	try:
 		file_cp = open(CP+romi, "r").readlines()
 	except IOError:
-		exit(prints(Panel(f"""Nama File {(romi)} Tidak Di Temukan""",width=90,style=f"bold white")))
-	prints(Panel(f"""Sebelum Melanjutkan Hidupkan Mode Pesawat Selama 10 Detik""",width=90,style=f"bold white"))
+		exit(prints(Panel(f"""Nama File {(romi)} Tidak Di Temukan""",width=90,style=f"bold cyan")))
+	prints(Panel(f"""Sebelum Melanjutkan Hidupkan Mode Pesawat Selama 10 Detik""",width=90,style=f"bold cyan"))
 	pw=console.input(f" [+] Ubah Password Ketika Tab Yes y/n : ")
 	if pw in['y','Y']:
 		ubah_pass.append("ubah_sandi")
@@ -2523,7 +2523,7 @@ def mengecek(user,pw):
 		print("%s %s"%(M,oh))
 	else:
 		tree = Tree(" ",guide_style=f"bold white")
-		tree.add(Panel(f"{O2}login gagal, silahkan cek kembali id dan kata sandi",width=83,padding=(0,2),style=f"bold white"))
+		tree.add(Panel(f"{O}login gagal, silahkan cek kembali id dan kata sandi",width=83,padding=(0,2),style=f"bold white"))
 		prints(tree)
 		  
 def scarpping_ua():
