@@ -65,7 +65,7 @@ ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],
 sys.stdout.write('\x1b]2; NCBF |NOLEP CYBORG BUFORD FACEBOOK \x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all').text
 	open('.socksku.txt','w').write(prox)
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD');exit()
