@@ -1626,6 +1626,7 @@ def passwrd():
 						pass
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'nama')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1641,6 +1642,7 @@ def passwrd():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'nama')
 						pwv.append(frs+'12')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
