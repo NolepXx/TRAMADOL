@@ -70,6 +70,7 @@ try:
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD');exit()
 prox=open('.prox.txt','r').read().splitlines()
+limitd=0
 for xd in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android 7.1.2;'
 	b=random.randrange(1, 9)
