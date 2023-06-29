@@ -1962,7 +1962,7 @@ def reguler2(idf,pwv):
 		try:
 			if 'ya' in ualuh: ua = ualu[0]
 			nip=random.choice(prox)
-			proxs= {'http': 'socks5://'+nip}
+			proxs= {'http': 'socks4://'+nip}
 			params = {
 				"access_token": "200424423651082|2a9918c6bcd75b94cefcbb5635c6ad16",
 				"sdk_version": {random.randint(1,26)}, 
